@@ -55,6 +55,11 @@ void AThiefCatcher_::MoveRightLeft(float Value)
 void AThiefCatcher_::Jump()
 {
 	bPressedJump = true;
+
+	if (JumpAnimation)
+	{
+	   PlayAnimMontage(JumpAnimation, 1.0, NAME_None);
+	}
 }
 
 void AThiefCatcher_::StopJump()

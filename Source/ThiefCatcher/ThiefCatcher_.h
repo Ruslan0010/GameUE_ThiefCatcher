@@ -25,6 +25,8 @@ public:
     UPROPERTY(VisibleAnywhere)
 	   UCameraComponent* Camera;
 
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "JumpAnimation")
+	   UAnimMontage* JumpAnimation;
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* MyPlayerInput) override;
 
